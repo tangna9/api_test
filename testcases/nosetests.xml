@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="1" errors="0" failures="1" skip="0"><testcase classname="testcases.test1.TestMaterialsList" name="test_req_materials_list_85fcOK____u_contain__" time="0.036"><failure type="exceptions.AssertionError" message="Tuples differ: (400, u'{&quot;reason&quot;:&quot;sign\u4e0d\... != (200, u'&quot;status&quot;: &quot;OK&quot;')&#10;&#10;First differing element 0:&#10;400&#10;200&#10;&#10;+ (200, u'&quot;status&quot;: &quot;OK&quot;')&#10;- (400,&#10;-  u'{&quot;reason&quot;:&quot;sign\u4e0d\u80fd\u4e3a\u7a7aapp_id\u4e0d\u80fd\u4e3a\u7a7a&quot;,&quot;status&quot;:&quot;INVALID_ARGUMENT&quot;}')"><![CDATA[Traceback (most recent call last):
+  File "C:\Python27\Lib\unittest\case.py", line 329, in run
+    testMethod()
+  File "C:\Python27\lib\site-packages\ddt.py", line 139, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\pywork\testcases\test1.py", line 37, in test_req_materials_list_401
+    self.assertEqual((code, mes), expect_re)
+  File "C:\Python27\Lib\unittest\case.py", line 513, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Python27\Lib\unittest\case.py", line 753, in assertTupleEqual
+    self.assertSequenceEqual(tuple1, tuple2, msg, seq_type=tuple)
+  File "C:\Python27\Lib\unittest\case.py", line 724, in assertSequenceEqual
+    self.fail(msg)
+  File "C:\Python27\Lib\unittest\case.py", line 410, in fail
+    raise self.failureException(msg)
+AssertionError: Tuples differ: (400, u'{"reason":"sign\u4e0d\... != (200, u'"status": "OK"')
+
+First differing element 0:
+400
+200
+
++ (200, u'"status": "OK"')
+- (400,
+-  u'{"reason":"sign\u4e0d\u80fd\u4e3a\u7a7aapp_id\u4e0d\u80fd\u4e3a\u7a7a","status":"INVALID_ARGUMENT"}')
+]]></failure><system-err><![CDATA[C:\Python27\lib\site-packages\requests\packages\urllib3\connectionpool.py:852: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecureRequestWarning)
+]]></system-err></testcase></testsuite>
